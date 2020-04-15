@@ -27,9 +27,9 @@ namespace Samples.CleanCodeApproach
 
     private bool AreZeroValuesMatchingForVector(Vector vector)
     {
-      if (AreZeroValuesMatching(vector.X, X)) return false;
-      if (AreZeroValuesMatching(vector.Y, Y)) return false;
-      if (AreZeroValuesMatching(vector.Z, Z)) return false;
+      if (!AreZeroValuesMatching(vector.X, X)) return false;
+      if (!AreZeroValuesMatching(vector.Y, Y)) return false;
+      if (!AreZeroValuesMatching(vector.Z, Z)) return false;
 
       return true;
     }
