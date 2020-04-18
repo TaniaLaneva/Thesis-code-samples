@@ -11,6 +11,7 @@ Some data might be useful for testing, to save your time :
 
 A bit more information about collinear points can be found here: [https://www.youtube.com/watch?v=UDt9M8_zxlw]
 Please, commit your tests on your branch. I am appreciated for your contribution.
+
 Best Regards,
 Tania
 
