@@ -13,5 +13,6 @@ A bit more information about collinear points can be found here: [https://www.yo
 Please, commit your tests on your branch. I am appreciated for your contribution.
 
 Best Regards,
+
 Tania
 
