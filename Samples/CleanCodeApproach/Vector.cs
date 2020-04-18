@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Samples.CleanCodeApproach
 {
-  public class Vector
+  public class Vector : IVector
   {
     public double X { get; }
     public double Y { get; }
