@@ -12,7 +12,7 @@ Some data might be useful for testing, to save your time :
 2)	Example of parallel vectors: v(2,2,2) and v(4,4,4)
 
 A bit more information about collinear points can be found here: [https://www.youtube.com/watch?v=UDt9M8_zxlw]
-Please, commit your tests on your branch. I am appreciated for your contribution.
+Please, commit your tests on your branch. I appreciated for your contribution.
 
 Best Regards,
 
