@@ -41,21 +41,26 @@ namespace UnitTests.CleanCodeApproachTests
         }
 
         [TestMethod]
-        public void Given_Three_Points_That_Are_The_Colinear_Throws_Exception()
+        public void Given_Three_Points_That_Are_Colinear_Throws_Exception()
         {
             var a = new Point3D(1, 0, 0);
             var b = new Point3D(2, 0, 0);
             var c = new Point3D(4, 0, 0);
-            var c1 = new Point3D(-1, 0, 0);
 
             var exception = Assert.ThrowsException<ArgumentException>(() => _sut.CheckIfTriangleCanBeBuilt(a, b, c));
             Assert.AreEqual("Can not use collinear points to calculate triangle perimeter (Parameter 'TriangleValidator')", exception.Message);
+        }
 
-            // bug.
-            exception = Assert.ThrowsException<ArgumentException>(() => _sut.CheckIfTriangleCanBeBuilt(a, b, c1));
+        // this is a bug!
+        [TestMethod]
+        public void Given_Three_Points_That_Are_Colinear_One_In_Negative_Should_Fail_But_Passes()
+        {
+            var a = new Point3D(1, 0, 0);
+            var b = new Point3D(2, 0, 0);
+            var c = new Point3D(-1, 0, 0);
+
+            var exception = Assert.ThrowsException<ArgumentException>(() => _sut.CheckIfTriangleCanBeBuilt(a, b, c));
             Assert.AreEqual("Can not use collinear points to calculate triangle perimeter (Parameter 'TriangleValidator')", exception.Message);
-
-
         }
     }
 }

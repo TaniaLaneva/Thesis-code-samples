@@ -70,7 +70,7 @@ namespace UnitTests.AdHocApproachTests
         public void Given_Colinear_Points_Return_Null()
         {
             // points on the same line
-            var result = _sut.CalculatePerimeter(Tuple.Create(1d, 0d, 0d), Tuple.Create(2d, 0d, 0d), Tuple.Create(3d, 0d, 0d));
+            var result = _sut.CalculatePerimeter(Tuple.Create(1d, 0d, 0d), Tuple.Create(2d, 0d, 0d), Tuple.Create(4d, 0d, 0d));
             Assert.IsNull(result);
         }
 
